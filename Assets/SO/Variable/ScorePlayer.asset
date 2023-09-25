@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d420c47a57cc89c488227921662ecb0c, type: 3}
   m_Name: ScorePlayer
   m_EditorClassIdentifier: 
-  count: 2000
+  count: 3000
