@@ -9,6 +9,7 @@ public class StateShop : IState
         ServiceLocator.Current.Get<ShopView>().Setup();
         ServiceLocator.Current.Get<CameraController>().TakeOnCamera(TypeCamera.Shop);
         ServiceLocator.Current.Get<AudioManager>().Play("MainThemeShop");
+        ServiceLocator.Current.Get<SkinSystem>().RotateHatsInShop();
     }
 
     public void Exit()

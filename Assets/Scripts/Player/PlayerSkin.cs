@@ -18,7 +18,7 @@ public class PlayerSkin
         material.SetTexture("_MainTex", newText);
     }
 
-    public void SetupHat(Hat hat1)
+    public void SetupHat(Hat hat1, Vector3 offset)
     {
         Debug.Log(hat1.HatElement.name);
         var go = hat1.HatElement;
@@ -29,7 +29,7 @@ public class PlayerSkin
         }
         hat = hat1.HatElement;
         hat.transform.SetParent(parent.transform);
-        hat.transform.position = positionHat.position;
+        hat.transform.position = positionHat.position+offset;
     }
 
 

@@ -36,7 +36,7 @@ public class Player : MonoBehaviour, IService
         SetupColor(ServiceLocator.Current.Get<SkinSystem>().GetChooseColorSkin().texture);
     }
 
-    public void SetupHat(Hat hat) => playerSkin.SetupHat(hat);
+    public void SetupHat(Hat hat) => playerSkin.SetupHat(hat,hat.skin.offsetGame);
     public void SetupColor(Texture texture) => playerSkin.SetupColor(texture);
 
     public void Setup(Transform startPos)  //Restart

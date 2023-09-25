@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBuy: 0
   cost: 200
+  rotateInShop: {x: 0, y: 0, z: -11}
+  rotateInGame: {x: 0, y: 0, z: 0}

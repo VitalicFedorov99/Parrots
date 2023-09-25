@@ -47,6 +47,30 @@ public class SkinSystem : MonoBehaviour, IService
         // Debug.Log(chooseHat.HatElement.name);
     }
 
+    public void RotateHatsInGame() 
+    {
+        foreach (var hat in hats)
+        {
+
+            hat.HatElement.transform.rotation = Quaternion.Euler(0, 0, 0);
+            hat.HatElement.transform.Rotate(hat.skin.GetRotateInGame());
+        }
+        // bird.transform.rotation =
+    }
+
+    public void RotateHatsInShop()
+    {
+
+        foreach (var hat in hats)
+        {
+
+            hat.HatElement.transform.rotation = Quaternion.Euler(0, 0, 0);
+            hat.HatElement.transform.Rotate(hat.skin.GetRotateInShop());
+        }
+        // bird.transform.rotation =
+    }
+
+
     public void SearchColorSkin(string name) => chooseColorSkin = Array.Find(colorSkins, c => c.Name == name);
 }
 [System.Serializable]
@@ -60,7 +84,7 @@ public class Hat : Item
 {
 
     public GameObject HatElement;
-
+    
 
 }
 

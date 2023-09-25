@@ -133,7 +133,7 @@ public class ShopModelHat: ShopModel
             idHat = 0;
         }
         currentHat = skinSystem.GetHatWithId(idHat);
-        playerSkin.SetupHat(currentHat);
+        playerSkin.SetupHat(currentHat,currentHat.skin.OffsetShop);
         currentItem = currentHat;
     }
 

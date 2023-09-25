@@ -21,6 +21,7 @@ public class RestartSystem: IService
         ServiceLocator.Current.Get<AudioManager>().Play("MainThemeGame");
         ServiceLocator.Current.Get<FollowCamers>().Setup(placeStartCamera);
         ServiceLocator.Current.Get<AnimationBirdsFinish>().Setup(placeWinGame);
-        ServiceLocator.Current.Get<FruitCreater>().CreateFruits();
+        ServiceLocator.Current.Get<SkinSystem>().RotateHatsInGame();
+        //ServiceLocator.Current.Get<FruitCreater>().CreateFruits();
     }
 }

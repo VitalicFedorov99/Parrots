@@ -25,7 +25,7 @@ public class ShopView : MonoBehaviour, IService
     {
         playerScoreTMP.text = scorePlayer.GetCount().ToString();
         playerSkin.SetupColor(skinSystem.GetChooseColorSkin().texture);
-        playerSkin.SetupHat(skinSystem.GetChooseHat());
+        playerSkin.SetupHat(skinSystem.GetChooseHat(), skinSystem.GetChooseHat().skin.OffsetShop);
         shopModelColor = new ShopModelColor(skinSystem.GetLengthColorSkins(), skinSystem.GetColorSkinWithId(0), skinSystem,playerSkin);
         shopModelHat = new ShopModelHat(skinSystem.GetLengthHats(), skinSystem.GetHatWithId(0),skinSystem,playerSkin);
         currentShopModel = shopModelColor;
